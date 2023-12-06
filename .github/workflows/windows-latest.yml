@@ -19,5 +19,5 @@ jobs:
           node-version: '16.x'
       - name: Install dependencies
         run: npm install
-      - run: npx @nightwatch/mobile-helper android --appium
+      - run: npx @nightwatch/mobile-helper-tool android --appium
       - run: npm run test:unit
