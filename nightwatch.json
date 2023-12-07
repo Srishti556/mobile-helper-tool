@@ -1,20 +1,6 @@
-{   
-  “src_folders”: [“tests”],   
-  “webdriver”: {     
-    “start_process”: true,     
-    “server_path”: “node_modules/.bin/appium”,    
-    “port”: 4723,    
-    “host”: “127.0.0.1”,    
-    “default_path_prefix”: “/wd/hub”, 
-    “test_settings”: {       
-      “default”: {    
-      “desiredCapabilities”: {       
-        “platformName”: “Android”
-      
-      “deviceName”: “emulator-5554”,    
-      “app”: “path/to/your/app.apk”  
-    }
-    }      
-  }     
-}
+{
+  "src_folders": [
+    "test"
+  ],
+  "unit_tests_mode": true
 }
