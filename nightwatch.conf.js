@@ -1,4 +1,4 @@
-"test_settings": {
+test_settings: {
  // other envs above this line
 
  app: {
