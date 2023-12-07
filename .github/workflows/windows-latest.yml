@@ -21,6 +21,7 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
       - run:  sdkmanager tools platform-tools
+      
       - uses: actions/checkout@v3
       - name: Use Node.js
         uses: actions/setup-node@v3
@@ -28,8 +29,8 @@ jobs:
           node-version: '16.x'
       - name: Install dependencies
         run: npm install
+      - run: npx @nightwatch/mobile-helper android --appium
       - run: npm i appium@next --save-dev
       - run: npx appium driver install uiautomator2
-      - run: appium server
       - run: npm install -g nightwatch@latest
       - run: npm run test:unit
