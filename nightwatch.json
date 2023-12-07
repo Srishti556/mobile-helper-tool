@@ -10,10 +10,11 @@
       “default”: {    
       “desiredCapabilities”: {       
         “platformName”: “Android”
-      }
+      
       “deviceName”: “emulator-5554”,    
       “app”: “path/to/your/app.apk”  
     }
     }      
   }     
+}
 }
