@@ -31,6 +31,8 @@ jobs:
         run: npm install
       - run: npm i @nightwatch/mobile-helper android --appium
       - run: npm i appium@next --save-dev
+      - name: Install and Run Appium Server
+        uses: moatazeldebsy/appium-server-gitHub-action@V1.0.4
       - run: npx appium driver install uiautomator2
       - run: npm install -g nightwatch@latest
       - run: npm run test:unit
